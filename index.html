@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Compass English Studio | Англи хэлний сургалт – Улаанбаатар</title>
+<meta name="description" content="CAMBRIDGE хөтөлбөр дээр суурилсан Англи хэлний сургалт. IELTS, TOEFL, Business English. Улаанбаатар хот.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-compass">
+    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="40" cy="40" r="37" stroke="#D4AF37" stroke-width="2" fill="none"/>
+      <circle cx="40" cy="40" r="24" stroke="#D4AF37" stroke-width="1.5" fill="none" stroke-dasharray="6 4" opacity="0.5"/>
+      <line x1="40" y1="3" x2="40" y2="77" stroke="#D4AF37" stroke-width="1" opacity="0.3"/>
+      <line x1="3" y1="40" x2="77" y2="40" stroke="#D4AF37" stroke-width="1" opacity="0.3"/>
+      <polygon points="40,8 43.5,34 40,30 36.5,34" fill="#D4AF37"/>
+      <polygon points="40,72 43.5,46 40,50 36.5,46" fill="#D4AF37" opacity="0.4"/>
+      <circle cx="40" cy="40" r="5" fill="none" stroke="#D4AF37" stroke-width="2"/>
+      <circle cx="40" cy="40" r="2.5" fill="#D4AF37"/>
+    </svg>
+  </div>
+  <div class="loader-wordmark">Golden Compass</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- NL TOAST -->
+<div id="nlToast">✓ Амжилттай бүртгэгдлээ!</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-menu" onclick="toggleMenu()">×</button>
+  <a href="#hero" onclick="toggleMenu()">Нүүр</a>
+  <a href="#about" onclick="toggleMenu()">Бидний тухай</a>
+  <a href="#courses" onclick="toggleMenu()">Сургалтууд</a>
+  <a href="#teachers" onclick="toggleMenu()">Багш нар</a>
+  <a href="#testimonials" onclick="toggleMenu()">Сэтгэгдэл</a>
+  <a href="#gallery" onclick="toggleMenu()">Зураг</a>
+  <a href="#blog" onclick="toggleMenu()">Мэдээ</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
+  <a href="#contact" onclick="toggleMenu()">Холбоо барих</a>
+  <a href="#register" onclick="toggleMenu()" style="color:var(--gold);font-weight:700">→ Бүртгүүлэх</a>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="24" stroke="#D4AF37" stroke-width="2" fill="rgba(212,175,55,0.04)"/>
+          <circle cx="26" cy="26" r="15" stroke="#D4AF37" stroke-width="1.5" fill="none" stroke-dasharray="5 3.5" opacity="0.55"/>
+          <line x1="26" y1="2" x2="26" y2="50" stroke="#D4AF37" stroke-width="1" opacity="0.3"/>
+          <line x1="2" y1="26" x2="50" y2="26" stroke="#D4AF37" stroke-width="1" opacity="0.3"/>
+          <polygon points="26,5 29,22 26,19 23,22" fill="#D4AF37"/>
+          <polygon points="26,47 29,30 26,33 23,30" fill="#D4AF37" opacity="0.4"/>
+          <circle cx="26" cy="26" r="4" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+          <circle cx="26" cy="26" r="2" fill="#D4AF37"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="top">Golden Compass</span>
+        <span class="bot">English Studio</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">Бидний тухай</a></li>
+      <li><a href="#courses">Сургалтууд</a></li>
+      <li><a href="#teachers">Багш нар</a></li>
+      <li><a href="#testimonials">Сэтгэгдэл</a></li>
+      <li><a href="#blog">Мэдээ</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Холбоо барих</a></li>
+      <li><a href="#register" class="nav-cta">Бүртгүүлэх</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    <div class="hero-grid-bg"></div>
+  </div>
+  <div class="hero-content">
+    <div class="fade-in">
+      <div class="hero-badge"><div class="hero-badge-dot"></div> Cambridge хөтөлбөр · 2015 оноос хойш</div>
+      <h1 class="hero-h1">Таны Англи хэл<br>сурах замын<br><em>хамгийн сүүлийн цэг</em></h1>
+      <p class="hero-sub">CAMBRIDGE хөтөлбөр дээр суурилсан цэгцтэй мэдлэг, логик сэтгэлгээ, бодит хэрэглээг хослуулсан Англи хэлний сургалт — IELTS, TOEFL болон бизнесийн Англи.</p>
+      <div class="hero-btns">
+        <a href="#register" class="btn-gold">Бүртгүүлэх →</a>
+        <a href="#courses" class="btn-ghost">Сургалтууд үзэх</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-pill">
+          <div class="stat-num" data-target="1200" data-suffix="+">0+</div>
+          <div class="stat-lbl">Суралцагч</div>
+        </div>
+        <div class="stat-pill">
+          <div class="stat-num" data-target="80" data-suffix="%">0%</div>
+          <div class="stat-lbl">Амжилтын хувь</div>
+        </div>
+        <div class="stat-pill">
+          <div class="stat-num" data-target="50" data-suffix="+">0+</div>
+          <div class="stat-lbl">Гадаадад суралцсан</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-cards fade-in" style="transition-delay:0.2s">
+      <div class="hero-card">
+        <div class="hc-icon">🎯</div>
+        <div class="hc-title">IELTS амжилтын түвшин</div>
+        <div class="prog-row">
+          <div class="prog-label"><span>Band 6.0–6.5</span><span>65%</span></div>
+          <div class="prog-bar"><div class="prog-fill" style="width:65%"></div></div>
+        </div>
+        <div class="prog-row" style="margin-top:9px">
+          <div class="prog-label"><span>Band 7.0–7.5</span><span>28%</span></div>
+          <div class="prog-bar"><div class="prog-fill" style="width:28%"></div></div>
+        </div>
+        <div class="prog-row" style="margin-top:9px">
+          <div class="prog-label"><span>Band 8.0+</span><span>7%</span></div>
+          <div class="prog-bar"><div class="prog-fill" style="width:7%"></div></div>
+        </div>
+      </div>
+      <div class="hero-card-row">
+        <div class="hero-card">
+          <div class="hc-icon">📚</div>
+          <div class="hc-title">Идэвхтэй анги</div>
+          <div class="hc-sub">Жил бүр 8+ бүлэг нэгэн зэрэг хичээллэдэг</div>
+        </div>
+        <div class="hero-card">
+          <div class="hc-icon">🌍</div>
+          <div class="hc-title">Гадаадын багш</div>
+          <div class="hc-sub">Native speaker болон олон улсын туршлагатай</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-inner">
+    <span>IELTS Бэлтгэл</span>
+    <span>TOEFL Бэлтгэл</span>
+    <span>Business English</span>
+    <span>VIP Хувийн сургалт</span>
+    <span>Корпорейт сургалт</span>
+    <span>Хүүхдийн Англи</span>
+    <span>Гадаадад суралцах</span>
+    <span>Cambridge Хөтөлбөр</span>
+    <span>IELTS Бэлтгэл</span>
+    <span>TOEFL Бэлтгэл</span>
+    <span>Business English</span>
+    <span>VIP Хувийн сургалт</span>
+    <span>Корпорейт сургалт</span>
+    <span>Хүүхдийн Англи</span>
+    <span>Гадаадад суралцах</span>
+    <span>Cambridge Хөтөлбөр</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual fade-in">
+        <div class="about-visual-inner">
+          <svg class="about-compass" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="70" cy="70" r="65" stroke="#D4AF37" stroke-width="2.5" fill="rgba(212,175,55,0.03)"/>
+            <circle cx="70" cy="70" r="44" stroke="#D4AF37" stroke-width="2" fill="none" stroke-dasharray="8 5" opacity="0.45"/>
+            <circle cx="70" cy="70" r="25" stroke="#D4AF37" stroke-width="1.5" fill="none" opacity="0.25"/>
+            <line x1="70" y1="5" x2="70" y2="135" stroke="#D4AF37" stroke-width="1" opacity="0.25"/>
+            <line x1="5" y1="70" x2="135" y2="70" stroke="#D4AF37" stroke-width="1" opacity="0.25"/>
+            <polygon points="70,10 74,56 70,50 66,56" fill="#D4AF37"/>
+            <polygon points="70,130 74,84 70,90 66,84" fill="#D4AF37" opacity="0.35"/>
+            <polygon points="130,70 84,74 90,70 84,66" fill="#D4AF37" opacity="0.35"/>
+            <circle cx="70" cy="70" r="9" fill="none" stroke="#D4AF37" stroke-width="2"/>
+            <circle cx="70" cy="70" r="4" fill="#D4AF37"/>
+          </svg>
+          <div class="about-name">
+            <span>Golden Compass</span>
+            <small>ENGLISH STUDIO</small>
+          </div>
+        </div>
+        <div class="about-badge">
+          <div class="num">9+</div>
+          <div class="lbl">Жилийн туршлага</div>
+        </div>
+      </div>
+      <div class="fade-in" style="transition-delay:0.15s">
+        <span class="section-tag">Бидний тухай</span>
+        <h2 class="section-h">Зорилготой сургалт, <em>бодит үр дүн</em></h2>
+        <p class="section-sub">Golden Compass English Studio нь 2015 онд үүсгэн байгуулагдсан бөгөөд Англи хэлний сургалт, IELTS, TOEFL бэлтгэл болон практик харилцааны чадварыг хөгжүүлэхэд мэргэшсэн Монгол улсын тэргүүлэх англи хэлний сургуулиудын нэг юм.</p>
+        <div class="about-list">
+          <div class="about-item">Дүрмийн цэгцтэй, системтэй мэдлэг олгох арга зүй</div>
+          <div class="about-item">Логик сэтгэлгээ хөгжүүлэх онцгой хичээл</div>
+          <div class="about-item">Бодит амьдралд хэрэглэгдэхүйц Англи хэл</div>
+          <div class="about-item">Олон улсад хүлээн зөвшөөрөгдсөн Cambridge хөтөлбөр</div>
+          <div class="about-item">CELTA/DELTA гэрчилгээтэй туршлагатай багш нарын баг</div>
+          <div class="about-item">50+ суралцагч гадаадад амжилттай суралцаж байна</div>
+        </div>
+        <div class="timeline">
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2015</div><div class="tl-text">Үүсгэн байгуулсан</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2018</div><div class="tl-text">Cambridge хамтрал</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2022</div><div class="tl-text">1000+ төгсөгч</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2024</div><div class="tl-text">Шинэ кампус</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats" style="padding:0">
+  <div class="container" style="padding-top:0;padding-bottom:0">
+    <div class="stats-row fade-in">
+      <div class="stat-box">
+        <div class="stat-big" data-target="1200" data-suffix="+">1200+</div>
+        <div class="stat-lbl2">Нийт суралцагч</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-big" data-target="80" data-suffix="%">80%</div>
+        <div class="stat-lbl2">Амжилтын хувь</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-big" data-target="50" data-suffix="+">50+</div>
+        <div class="stat-lbl2">Гадаадад суралцсан</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-big" data-target="9" data-suffix="+">9+</div>
+        <div class="stat-lbl2">Жилийн туршлага</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-tag">Сургалтууд</span>
+      <h2 class="section-h">Таны зорилгод тохирсон <em>хөтөлбөр</em></h2>
+      <p class="section-sub">Бүх түвшний суралцагчдад зориулсан иж бүрдэл сургалтын систем</p>
+    </div>
+    <div class="courses-grid">
+      <div class="course-card feat fade-in">
+        <div class="cc-head">
+          <div class="cc-tag">Хамгийн алдартай</div>
+          <div class="cc-name">IELTS Preparation</div>
+          <div class="cc-sub">Academic & General Training</div>
+          <div class="cc-feat-badge">⭐ TOP</div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-meta"><span>3.5 сар</span><span>200 цаг</span><span>Бүх түвшин</span></div>
+          <div class="cc-feats">
+            <div class="cc-feat">Шалгалтын тусгай стратеги</div>
+            <div class="cc-feat">Listening, Reading, Writing, Speaking</div>
+            <div class="cc-feat">Долоо хоног бүр Mock Test</div>
+            <div class="cc-feat">Band 6.0 → 8.5 зорилт</div>
+            <div class="cc-feat">Хувийн үнэлгээ, санал хүсэлт</div>
+          </div>
+          <a href="#register" class="btn-course">Бүртгүүлэх →</a>
+        </div>
+      </div>
+      <div class="course-card fade-in" style="transition-delay:0.07s">
+        <div class="cc-head">
+          <div class="cc-tag">Олон улсын шалгалт</div>
+          <div class="cc-name">TOEFL iBT</div>
+          <div class="cc-sub">ETS албан ёсны бэлтгэл</div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-meta"><span>3 сар</span><span>150 цаг</span><span>Дунд болон дээш</span></div>
+          <div class="cc-feats">
+            <div class="cc-feat">Reading & Listening стратеги</div>
+            <div class="cc-feat">Speaking & Writing даалгавар</div>
+            <div class="cc-feat">ETS-ийн жинхэнэ дасгалууд</div>
+            <div class="cc-feat">Бүтэн хугацааны Practice Test</div>
+          </div>
+          <a href="#register" class="btn-course">Бүртгүүлэх →</a>
+        </div>
+      </div>
+      <div class="course-card fade-in" style="transition-delay:0.14s">
+        <div class="cc-head">
+          <div class="cc-tag">Бизнесийн Англи</div>
+          <div class="cc-name">Business English</div>
+          <div class="cc-sub">Мэргэжлийн харилцаа</div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-meta"><span>2 сар</span><span>80 цаг</span><span>Дунд болон дээш</span></div>
+          <div class="cc-feats">
+            <div class="cc-feat">И-мэйл, тайлан, танилцуулга</div>
+            <div class="cc-feat">Хурал, хэлэлцээрийн хэл</div>
+            <div class="cc-feat">Мэргэжлийн үгсийн сан</div>
+            <div class="cc-feat">Бизнес бичгийн гэрчилгээ</div>
+          </div>
+          <a href="#register" class="btn-course">Бүртгүүлэх →</a>
+        </div>
+      </div>
+      <div class="course-card fade-in" style="transition-delay:0.0s">
+        <div class="cc-head">
+          <div class="cc-tag">VIP / Хувийн</div>
+          <div class="cc-name">VIP One-on-One</div>
+          <div class="cc-sub">Хувийн эрчимтэй сургалт</div>
+          <div class="cc-feat-badge">Premium</div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-meta"><span>Уян хатан</span><span>1-on-1</span><span>Бүх түвшин</span></div>
+          <div class="cc-feats">
+            <div class="cc-feat">Хувийн тусгай хөтөлбөр</div>
+            <div class="cc-feat">Хурдацтай дэвшил баталгаатай</div>
+            <div class="cc-feat">Уян хатан цагийн хуваарь</div>
+            <div class="cc-feat">Тусгайлсан багш</div>
+          </div>
+          <a href="#register" class="btn-course">Лавлах →</a>
+        </div>
+      </div>
+      <div class="course-card fade-in" style="transition-delay:0.07s">
+        <div class="cc-head">
+          <div class="cc-tag">Хүүхдийн хөтөлбөр</div>
+          <div class="cc-name">Kids English</div>
+          <div class="cc-sub">6–15 нас · Тоглоомоор суралцах</div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-meta"><span>Тасралтгүй</span><span>3 удаа/7 хоног</span><span>Анхлан</span></div>
+          <div class="cc-feats">
+            <div class="cc-feat">Насанд тохирсон аргачлал</div>
+            <div class="cc-feat">Тоглоом, дуугаар хичээллэх</div>
+            <div class="cc-feat">Ярих дур хүслийг хөгжүүлэх</div>
+            <div class="cc-feat">Эцэг эхэд ахиц дэвшлийн тайлан</div>
+          </div>
+          <a href="#register" class="btn-course">Бүртгүүлэх →</a>
+        </div>
+      </div>
+      <div class="course-card fade-in" style="transition-delay:0.14s">
+        <div class="cc-head">
+          <div class="cc-tag">Эрчимтэй хичээл</div>
+          <div class="cc-name">Vacuum Intensive</div>
+          <div class="cc-sub">Бүрэн дүрэлзэлтийн орчин</div>
+          <div class="cc-feat-badge">Intensive</div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-meta"><span>6 долоо хоног</span><span>Өдөр тутам</span><span>Бүх түвшин</span></div>
+          <div class="cc-feats">
+            <div class="cc-feat">Бүтэн өдрийн Англи хэлний орчин</div>
+            <div class="cc-feat">Хурдацтай чадвар хөгжүүлэх</div>
+            <div class="cc-feat">Гадаадад суралцах мэт орчин</div>
+            <div class="cc-feat">Харагдахуйц дэвшил баталгаатай</div>
+          </div>
+          <a href="#register" class="btn-course">Бүртгүүлэх →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section id="adv">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-tag section-tag-light">Давуу тал</span>
+      <h2 class="section-h text-white">Яагаад <em class="w">Golden Compass</em>-ийг сонгох вэ?</h2>
+      <p class="section-sub text-muted-w">Манай тэргүүлэх давуу талууд таны амжилтын үндэс болно</p>
+    </div>
+    <div class="adv-grid">
+      <div class="adv-card fade-in"><div class="adv-icon">📐</div><h3>Дүрмийн цэгцтэй мэдлэг</h3><p>Cambridge хөтөлбөрт суурилсан системтэй, логик дүрмийн цогц мэдлэг олгоно. Мэдлэг нь хатуу суурин дээр тогтдог.</p></div>
+      <div class="adv-card fade-in" style="transition-delay:0.08s"><div class="adv-icon">🎓</div><h3>Бүх түвшний сургалт</h3><p>Анхлан суралцагчаас эхлэн Advanced түвшин хүртэлх бүх шатны хичээлтэй. Таны эхлэх цэгийг хамжлага гэж үзэхгүй.</p></div>
+      <div class="adv-card fade-in" style="transition-delay:0.16s"><div class="adv-icon">👨‍🏫</div><h3>Туршлагатай багш нар</h3><p>Олон улсад боловсрол эзэмшсэн, CELTA/DELTA гэрчилгээтэй, native speaker болон Монгол багш нарын хамтарсан баг.</p></div>
+      <div class="adv-card fade-in"><div class="adv-icon">⏰</div><h3>Уян хатан хуваарь</h3><p>Өглөө, үд, оройн болон амралтын өдрийн бүлгүүдтэй тул ажил, сургуулийн хуваарьтайгаа нийцүүлж болно.</p></div>
+      <div class="adv-card fade-in" style="transition-delay:0.08s"><div class="adv-icon">🏛️</div><h3>Орчин үеийн танхим</h3><p>Smart board, AC бүхий тохилог, орчин үеийн тоног төхөөрөмжтэй сургалтын танхим. Тав тухтай орчин суралцахад чухал.</p></div>
+      <div class="adv-card fade-in" style="transition-delay:0.16s"><div class="adv-icon">💬</div><h3>Бодит хэрэглээтэй</h3><p>Хуурамч дасгал биш — бодит амьдралд ашиглагдах практик мэдлэг, харилцааны чадвар. Хэл бол амьд зүйл.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEACHERS -->
+<section id="teachers">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-tag">Багш нар</span>
+      <h2 class="section-h">Манай <em>мэргэшсэн баг</em></h2>
+      <p class="section-sub">Туршлагатай, тавлаг багш нар таны амжилтын гол хүч болно</p>
+    </div>
+    <div class="teachers-grid">
+      <div class="teacher-card fade-in">
+        <div class="teacher-img">
+          <div class="teacher-av">Д</div>
+          <div class="teacher-country">🇲🇳 Монгол</div>
+        </div>
+        <div class="teacher-body">
+          <div class="teacher-name">Дуугий багш</div>
+          <div class="teacher-role">IELTS ахлах багш · Cambridge CELTA</div>
+          <p class="teacher-bio">10+ жилийн IELTS заах туршлагатай. 500 гаруй суралцагчид Band 7.0+ авахад тусалсан. Academic Writing-д тусгай мэргэшсэн.</p>
+          <span class="teacher-cert">⭐ 10+ жилийн туршлага</span>
+        </div>
+      </div>
+      <div class="teacher-card fade-in" style="transition-delay:0.1s">
+        <div class="teacher-img">
+          <div class="teacher-av">F</div>
+          <div class="teacher-country">🇬🇧 Native</div>
+        </div>
+        <div class="teacher-body">
+          <div class="teacher-name">Гадаадын багш</div>
+          <div class="teacher-role">Native Speaker · Speaking Coach</div>
+          <p class="teacher-bio">British Council-ийн сертификаттай. Speaking болон Listening дасгалжуулагч. Business English-д мэргэшсэн.</p>
+          <span class="teacher-cert">⭐ 8+ жилийн туршлага</span>
+        </div>
+      </div>
+      <div class="teacher-card fade-in" style="transition-delay:0.2s">
+        <div class="teacher-img">
+          <div class="teacher-av">Г</div>
+          <div class="teacher-country">🇲🇳 Монгол</div>
+        </div>
+        <div class="teacher-body">
+          <div class="teacher-name">Доогий багш</div>
+          <div class="teacher-role">Grammar & Writing мэргэжилтэн</div>
+          <p class="teacher-bio">Academic Writing болон Grammar системийн мэргэшсэн зааварлагч. TOEFL бэлтгэлийн тусгай арга зүйтэй.</p>
+          <span class="teacher-cert">⭐ 7+ жилийн туршлага</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-tag">Сэтгэгдэл</span>
+      <h2 class="section-h">Суралцагчдын <em>амжилтын түүхүүд</em></h2>
+      <p class="section-sub">1,200 гаруй суралцагч Golden Compass-т суралцаж ирээдүйгээ өөрчилсөн</p>
+    </div>
+    <div class="test-wrapper fade-in">
+      <div style="overflow:hidden">
+        <div class="test-track" id="testTrack">
+          <div class="test-card">
+            <div class="test-quote">"</div>
+            <div class="stars">★★★★★</div>
+            <p class="test-text">Golden Compass-т сурсны дараа IELTS-ээс 7.0 авлаа. Дуугий багшийн тайлбар маш тодорхой, системтэй байсан. Яг юу алдаж байгаагаа мэдэж авсан нь гол нь байсан. Одоо Австралид суралцаж байна!</p>
+            <div class="test-author">
+              <div class="ta-av">Б</div>
+              <div><span class="ta-name">Батбаяр Д.</span><span class="ta-score">IELTS 7.0 → Австрали</span></div>
+            </div>
+          </div>
+          <div class="test-card">
+            <div class="test-quote">"</div>
+            <div class="stars">★★★★★</div>
+            <p class="test-text">Гадаадын багштай практикт хичээллэсэн нь маш хэрэгтэй байлаа. Speaking-д өмнө нь ихэд айдаг байсан боловч одоо итгэлтэйгээр ярьж чаддаг болсон. 3 сарын хичээлд их өөрчлөлт мэдэрсэн.</p>
+            <div class="test-author">
+              <div class="ta-av">Н</div>
+              <div><span class="ta-name">Нарантуяа С.</span><span class="ta-score">IELTS 6.5 → Канад</span></div>
+            </div>
+          </div>
+          <div class="test-card">
+            <div class="test-quote">"</div>
+            <div class="stars">★★★★★</div>
+            <p class="test-text">TOEFL-д 95 оноо авсан. Багшийн Writing хичээл онцгой сайн байсан. Бүтэц, логик, лексикийг хэрхэн хослуулах талаар маш сайн сургасан. АНУ-д суралцах мөрөөдөл биелэлээ.</p>
+            <div class="test-author">
+              <div class="ta-av">Э</div>
+              <div><span class="ta-name">Энхжаргал Т.</span><span class="ta-score">TOEFL 95 → АНУ</span></div>
+            </div>
+          </div>
+          <div class="test-card">
+            <div class="test-quote">"</div>
+            <div class="stars">★★★★★</div>
+            <p class="test-text">VIP хичээл авсан нь хамгийн зөв шийдвэр байлаа. 3 сарын дотор Band 5.5-аас 7.5 болтол дэвшсэн. Багш маш тусч, хариуцлагатай байлаа. Үнэхээр зөв сургуулийг сонгосон.</p>
+            <div class="test-author">
+              <div class="ta-av">М</div>
+              <div><span class="ta-name">Мөнхбаяр Г.</span><span class="ta-score">IELTS 7.5 → Англи</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-ctrls">
+        <button class="sl-btn" onclick="slideTest(-1)">←</button>
+        <div class="sl-dots" id="testDots">
+          <div class="dot active" onclick="goToSlide(0)"></div>
+          <div class="dot" onclick="goToSlide(1)"></div>
+          <div class="dot" onclick="goToSlide(2)"></div>
+        </div>
+        <button class="sl-btn" onclick="slideTest(1)">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section id="method">
+  <div class="container">
+    <div class="method-grid">
+      <div class="fade-in">
+        <span class="section-tag section-tag-light">Арга зүй</span>
+        <h2 class="section-h text-white">Golden Compass-ийн<br><em class="w">сургалтын систем</em></h2>
+        <p class="section-sub text-muted-w" style="margin-bottom:36px">Манай баталгаажсан 4 алхамт арга зүй нь дүрмийн бат суурийг бодит хэрэглэлтэй хослуулж — уламжлалт аргаас илүү хурдан, тодорхой үр дүн өгдөг.</p>
+        <div class="method-steps">
+          <div class="method-step fade-in">
+            <div class="step-num">01</div>
+            <div class="step-info"><h4>Оношлогооны шалгалт</h4><p>Хэлний 4 чадварт суурилсан иж бүрэн Placement Test-ээр таны яг хаана байгааг тодорхойлно.</p></div>
+          </div>
+          <div class="method-step fade-in" style="transition-delay:0.08s">
+            <div class="step-num">02</div>
+            <div class="step-info"><h4>Суурийн мэдлэг бүрдүүлэх</h4><p>Cambridge-ийн дүрэм, үгсийн санд суурилсан бүтэцтэй хичээлийн шат.</p></div>
+          </div>
+          <div class="method-step fade-in" style="transition-delay:0.16s">
+            <div class="step-num">03</div>
+            <div class="step-info"><h4>Бодит орчинд хэрэглэх</h4><p>Шалгалтын нөхцөл, бизнесийн хувилбар, жинхэнэ харилцааны даалгаваруудаар дадлага хийнэ.</p></div>
+          </div>
+          <div class="method-step fade-in" style="transition-delay:0.24s">
+            <div class="step-num">04</div>
+            <div class="step-info"><h4>Гүйцэтгэлийг хянах</h4><p>7 хоног бүрийн Mock Test болон нарийн санал хүсэлтийн хичээлүүд хурдан дэвшихэд тусална.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="method-panel fade-in" style="transition-delay:0.2s">
+        <h3>Бидний ялгаа</h3>
+        <p class="sub">Бид зүгээр л Англи хэл заадаггүй — амжилтыг инженерчилдэг. Хичээл бүр таны тодорхой зорилтод чиглэсэн байдаг.</p>
+        <div class="method-tags">
+          <div class="m-tag">Cambridge Curriculum</div>
+          <div class="m-tag">Гэрчилгээтэй Багш нар</div>
+          <div class="m-tag">Жижиг ангийн хэмжээ</div>
+          <div class="m-tag">Mock Exams 7 хоног бүр</div>
+          <div class="m-tag">Хувийн Feedback</div>
+          <div class="m-tag">Гадаадад суралцах дэмжлэг</div>
+          <div class="m-tag">Уян Хуваарь</div>
+          <div class="m-tag">Native Speaker</div>
+          <div class="m-tag">Ахиц дэвшлийн хяналт</div>
+          <div class="m-tag">Immersion арга</div>
+          <div class="m-tag">Grammar Mastery</div>
+          <div class="m-tag">Speaking Fluency</div>
+        </div>
+        <div class="method-quote">
+          <p>"Golden Compass нь 2015 оноос хойш Монголын оюутан, мэргэжлийн хүмүүст дэлхийн түвшний Англи хэлний боловсрол олгох эрхэм зорилготой ажиллаж ирсэн."</p>
+          <cite>— Үүсгэн байгуулагч, Golden Compass English Studio</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-tag">Зургийн цомог</span>
+      <h2 class="section-h">Манай <em>орчин ба амьдрал</em></h2>
+    </div>
+    <div class="gallery-grid fade-in">
+      <div class="gallery-item wide" style="background:linear-gradient(135deg,#0F172A,#1a3060)">
+        <div class="gallery-emoji">🎓</div>
+        <div class="gal-overlay"><span>🔍</span></div>
+        <div class="gal-label">Төгсөлтийн ёслол</div>
+      </div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#1E293B,#0F172A)">
+        <div class="gallery-emoji">📚</div>
+        <div class="gal-overlay"><span>🔍</span></div>
+        <div class="gal-label">Хичээлийн танхим</div>
+      </div>
+      <div class="gallery-item tall" style="background:linear-gradient(135deg,#1a2540,#0F172A)">
+        <div class="gallery-emoji" style="font-size:52px">✍️</div>
+        <div class="gal-overlay"><span>🔍</span></div>
+        <div class="gal-label">Writing хичээл</div>
+      </div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#162032,#0d1a2e)">
+        <div class="gallery-emoji">🎤</div>
+        <div class="gal-overlay"><span>🔍</span></div>
+        <div class="gal-label">Speaking Practice</div>
+      </div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#1E293B,#162032)">
+        <div class="gallery-emoji">🏆</div>
+        <div class="gal-overlay"><span>🔍</span></div>
+        <div class="gal-label">Шагналын ёслол</div>
+      </div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#0d1a2e,#1E293B)">
+        <div class="gallery-emoji">👨‍💻</div>
+        <div class="gal-overlay"><span>🔍</span></div>
+        <div class="gal-label">Онлайн хичээл</div>
+      </div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#162032,#1a3060)">
+        <div class="gallery-emoji">🌐</div>
+        <div class="gal-overlay"><span>🔍</span></div>
+        <div class="gal-label">Гадаадын багш</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-tag">Мэдээ & нийтлэл</span>
+      <h2 class="section-h">Мэдлэгийн <em>эх сурвалж</em></h2>
+      <p class="section-sub">Суралцагчдынхаа болон зочдынхоо төлөө мэргэжлийн зөвлөгөө, аргачлалыг үнэгүй хуваалцана</p>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card fade-in">
+        <div class="blog-img" style="background:linear-gradient(135deg,#1E293B,#0F172A)">
+          <span>📝</span><div class="blog-cat">IELTS</div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">2024.03.15</div>
+          <div class="blog-title">IELTS Writing Task 2-д 7.0+ авах 5 баталгаат стратеги</div>
+          <p class="blog-exc">Academic Writing-д Band 7.0-аас дээш авахын тулд мэдэж байх ёстой нууц стратегиуд...</p>
+          <a href="#" class="blog-link">Цааш унших →</a>
+        </div>
+      </div>
+      <div class="blog-card fade-in" style="transition-delay:0.1s">
+        <div class="blog-img" style="background:linear-gradient(135deg,#162032,#1a3060)">
+          <span>🆚</span><div class="blog-cat">Шалгалт</div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">2024.02.28</div>
+          <div class="blog-title">TOEFL vs IELTS: Аль нь таны зорилгод тохирох вэ?</div>
+          <p class="blog-exc">Хоёр шалгалтын ялгаа, давуу болон сул талуудыг харьцуулж, зөв шийдвэр гаргахад тань туслая...</p>
+          <a href="#" class="blog-link">Цааш унших →</a>
+        </div>
+      </div>
+      <div class="blog-card fade-in" style="transition-delay:0.2s">
+        <div class="blog-img" style="background:linear-gradient(135deg,#1a2540,#0d1a2e)">
+          <span>🚀</span><div class="blog-cat">Зөвлөгөө</div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">2024.02.10</div>
+          <div class="blog-title">Гэртээ Англи хэлний орчин хэрхэн бүрдүүлэх вэ?</div>
+          <p class="blog-exc">Өдөр тутмын амьдралдаа Англи хэлийг хэрхэн нэвтрүүлж, хурдан дэвших арга замууд...</p>
+          <a href="#" class="blog-link">Цааш унших →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-tag">Асуулт & Хариулт</span>
+      <h2 class="section-h">Түгээмэл <em>асуултууд</em></h2>
+    </div>
+    <div class="faq-list fade-in">
+      <div class="faq-item open">
+        <div class="faq-q" onclick="toggleFaq(this)">Хэрхэн бүртгүүлэх вэ?<div class="faq-icon">+</div></div>
+        <div class="faq-a"><p>Вэбсайтын бүртгэлийн маягт бөглөх эсвэл 9449 0919 дугаарт залгаж, байршил дээр ирж бүртгүүлж болно. Бүртгэл баталгаажсаны дараа цагийн хуваарь, сургалтын дэлгэрэнгүй мэдээлэл очих болно.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Ямар түвшний сургалт байдаг вэ?<div class="faq-icon">+</div></div>
+        <div class="faq-a"><p>Beginner (анхлан), Elementary, Pre-Intermediate, Intermediate, Upper-Intermediate, Advanced гэсэн 6 үндсэн түвшин байдаг. Бүртгүүлэхдээ үнэгүй мэдлэгийн түвшин шалгах тест өгнө.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Онлайн хичээл байдаг уу?<div class="faq-icon">+</div></div>
+        <div class="faq-a"><p>Тийм, зарим хөтөлбөрт Zoom платформоор онлайн хичээл байдаг. Ялангуяа VIP хувийн сургалт болон Weekend Intensive хөтөлбөрүүд онлайнаар ч явагддаг.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Хичээлийн цагийн хуваарь ямар байдаг вэ?<div class="faq-icon">+</div></div>
+        <div class="faq-a"><p>Даваа–Баасан: 09:00–20:00 цагийн хооронд олон бүлэгтэй. Бямба: 10:00–18:00. Өглөө, үдийн, оройн бүлгүүд байдаг тул ажил, сургуулийн хуваарьтай нийцүүлж болно.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Хөтөлбөр хэр удаан үргэлжилдэг вэ?<div class="faq-icon">+</div></div>
+        <div class="faq-a"><p>IELTS: 3.5 сар (200 цаг), TOEFL: 3 сар (150 цаг), VIP: хувийн хуваарь, General English: 2–4 сар хөтөлбөрөөс хамааран, Вакацийн хичээл: 2–4 долоо хоног.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Эхлэхийн өмнө туршилтын хичээл байдаг уу?<div class="faq-icon">+</div></div>
+        <div class="faq-a"><p>Тийм, бүртгүүлсэн шинэ суралцагч бүр үнэгүй Placement Test өгдөг. Мөн эхний ажиглах хичээлийг үнэгүй орж туршиж болно. Тавтай морил!</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTER -->
+<section id="register">
+  <div class="container">
+    <div class="register-grid">
+      <div class="fade-in">
+        <span class="section-tag section-tag-light">Бүртгэл</span>
+        <h2 class="section-h text-white">Өнөөдөр эхлэх <em class="w">алхам</em></h2>
+        <p class="section-sub text-muted-w">Маягт бөглөн бидэнтэй холбогдоорой. Бид 24 цагийн дотор холбогдох болно.</p>
+        <div class="reg-features">
+          <div class="reg-feat">
+            <div class="rf-icon"><span>📋</span></div>
+            <div><div class="rf-h">Үнэгүй зөвлөгөө</div><p class="rf-p">Зорилгодоо тохирсон хөтөлбөр сонгоход мэргэжлийн зөвлөгөө авна</p></div>
+          </div>
+          <div class="reg-feat">
+            <div class="rf-icon"><span>📊</span></div>
+            <div><div class="rf-h">Үнэгүй Placement Test</div><p class="rf-p">Таны түвшинд яг тохирсон бүлэгт хуваарилж, хамгийн үр дүнтэй хичээллэнэ</p></div>
+          </div>
+          <div class="reg-feat">
+            <div class="rf-icon"><span>🎁</span></div>
+            <div><div class="rf-h">Туршилтын хичээл үнэгүй</div><p class="rf-p">Эхний ажиглах хичээлийг үнэгүй орж туршиж, шийдвэрлэж болно</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in" style="transition-delay:0.15s">
+        <div class="form-card">
+          <h3>Бүртгүүлэх</h3>
+          <p class="fc-sub">Мэдээллээ бөглөн илгээгээрэй — бид тантай удахгүй холбогдоно</p>
+          <div class="form-toast" id="formToast"></div>
+          <div id="regForm">
+            <div class="form-grid">
+              <div class="fg">
+                <label for="f-name">Овог нэр *</label>
+                <input type="text" id="f-name" placeholder="Таны бүтэн нэр">
+                <span class="ferr" id="err-name">Нэрээ оруулна уу</span>
+              </div>
+              <div class="fg">
+                <label for="f-phone">Утасны дугаар *</label>
+                <input type="tel" id="f-phone" placeholder="9449 0919">
+                <span class="ferr" id="err-phone">Утасны дугаар оруулна уу</span>
+              </div>
+              <div class="fg">
+                <label for="f-email">И-мэйл хаяг</label>
+                <input type="email" id="f-email" placeholder="email@example.com">
+              </div>
+              <div class="fg">
+                <label for="f-course">Хүссэн сургалт *</label>
+                <select id="f-course">
+                  <option value="">Сонгох...</option>
+                  <option>IELTS Preparation</option>
+                  <option>TOEFL iBT</option>
+                  <option>Business English</option>
+                  <option>VIP One-on-One</option>
+                  <option>Kids English</option>
+                  <option>Vacuum Intensive</option>
+                </select>
+                <span class="ferr" id="err-course">Сургалт сонгоно уу</span>
+              </div>
+              <div class="fg">
+                <label for="f-level">Одоогийн түвшин</label>
+                <select id="f-level">
+                  <option value="">Сонгох...</option>
+                  <option>Beginner (Анхлан)</option>
+                  <option>Elementary</option>
+                  <option>Pre-Intermediate</option>
+                  <option>Intermediate</option>
+                  <option>Upper-Intermediate</option>
+                  <option>Advanced</option>
+                </select>
+              </div>
+              <div class="fg">
+                <label for="f-time">Цагийн давуу байдал</label>
+                <select id="f-time">
+                  <option>Өглөө (09:00–12:00)</option>
+                  <option>Үдийн (12:00–16:00)</option>
+                  <option>Оройн (17:00–20:00)</option>
+                  <option>Амралтын өдөр</option>
+                </select>
+              </div>
+              <div class="fg full">
+                <label for="f-note">Нэмэлт мэдээлэл</label>
+                <textarea id="f-note" placeholder="Та ямар зорилгоор суралцах гэж байгаа вэ? Гадаадад суралцах, ажлын шаардлага гэх мэт..."></textarea>
+              </div>
+            </div>
+            <button class="btn-submit" id="submitBtn" onclick="submitForm()">Сургалтанд бүртгүүлэх →</button>
+          </div>
+          <div class="form-success" id="formSuccess">
+            <div class="suc-icon">🎉</div>
+            <h3>Амжилттай бүртгэгдлээ!</h3>
+            <p>Таны мэдээллийг хүлээн авлаа. Бид 24 цагийн дотор холбогдох болно.</p>
+            <a href="#courses" style="display:inline-block;margin-top:16px;color:var(--gold-dark);font-weight:700;text-decoration:none">Сургалтуудаа харах →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-tag">Холбоо барих</span>
+      <h2 class="section-h">Биднийг <em>олж ирээрэй</em></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-items fade-in">
+        <div class="contact-item">
+          <div class="ci-icon">📍</div>
+          <div><div class="ci-h">Хаяг</div><p class="ci-p">Сүхбаатар дүүрэг<br>CITY CENTER, 9-р давхар, 901 тоот<br>Улаанбаатар хот</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">📞</div>
+          <div><div class="ci-h">Утас</div><p class="ci-p"><a href="tel:94490919" style="color:var(--gold-dark);font-weight:700;text-decoration:none">9449 0919</a></p></div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">✉️</div>
+          <div><div class="ci-h">И-мэйл</div><p class="ci-p"><a href="mailto:info@goldencompass.mn" style="color:var(--gold-dark);font-weight:600;text-decoration:none">info@goldencompass.mn</a></p></div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">⏰</div>
+          <div><div class="ci-h">Ажлын цаг</div><p class="ci-p">Даваа–Баасан: 09:00–20:00<br>Бямба: 10:00–18:00<br>Ням: Амарна</p></div>
+        </div>
+        <div>
+          <div class="ci-h" style="margin-bottom:10px">Сошиал медиа</div>
+          <div class="socials">
+            <a href="#" class="soc-btn" title="Facebook">𝑓</a>
+            <a href="#" class="soc-btn" title="Instagram">📸</a>
+            <a href="#" class="soc-btn" title="YouTube">▶</a>
+            <a href="https://wa.me/97694490919" class="soc-btn" title="WhatsApp">💬</a>
+          </div>
+        </div>
+      </div>
+      <div class="map-box fade-in" style="transition-delay:0.15s">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.9!2d106.9057!3d47.9184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96936b2a4e29e3%3A0x28ec77e3c3de6d67!2sCity%20Center%20Mall!5e0!3m2!1smn!2smn!4v1234567890" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <div class="logo-mark" style="width:44px;height:44px">
+            <svg viewBox="0 0 52 52" fill="none"><circle cx="26" cy="26" r="24" stroke="#D4AF37" stroke-width="2" fill="rgba(212,175,55,0.04)"/><circle cx="26" cy="26" r="15" stroke="#D4AF37" stroke-width="1.5" fill="none" stroke-dasharray="5 3.5" opacity="0.55"/><polygon points="26,5 29,22 26,19 23,22" fill="#D4AF37"/><circle cx="26" cy="26" r="4" fill="none" stroke="#D4AF37" stroke-width="1.5"/><circle cx="26" cy="26" r="2" fill="#D4AF37"/></svg>
+          </div>
+          <div class="logo-text"><span class="top">Golden Compass</span><span class="bot">English Studio</span></div>
+        </a>
+        <p>CAMBRIDGE хөтөлбөр дээр суурилсан цэгцтэй мэдлэг, логик сэтгэлгээ, бодит хэрэглээг хослуулсан Англи хэлний сургалт. 2015 оноос Улаанбаатарт.</p>
+      </div>
+      <div>
+        <h4>Хурдан холбоос</h4>
+        <ul class="footer-links">
+          <li><a href="#about">Бидний тухай</a></li>
+          <li><a href="#courses">Сургалтууд</a></li>
+          <li><a href="#teachers">Багш нар</a></li>
+          <li><a href="#testimonials">Сэтгэгдэл</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Сургалтууд</h4>
+        <ul class="footer-links">
+          <li><a href="#courses">IELTS Бэлтгэл</a></li>
+          <li><a href="#courses">TOEFL iBT</a></li>
+          <li><a href="#courses">Business English</a></li>
+          <li><a href="#courses">VIP One-on-One</a></li>
+          <li><a href="#courses">Хүүхдийн Англи</a></li>
+          <li><a href="#courses">Vacation Intensive</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Мэдэгдэл авах</h4>
+        <p style="color:rgba(255,255,255,0.4);font-size:12.5px;margin-bottom:10px">Шинэ хөтөлбөр, хөнгөлөлтийн мэдэгдэл авах</p>
+        <div class="nl-form">
+          <input type="email" class="nl-input" id="nlEmail" placeholder="И-мэйл хаяг">
+          <button class="nl-btn" onclick="subscribeNL()">→</button>
+        </div>
+        <div class="socials" style="margin-top:14px">
+          <a href="#" class="soc-btn" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);color:white">𝑓</a>
+          <a href="#" class="soc-btn" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);color:white">📸</a>
+          <a href="#" class="soc-btn" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);color:white">▶</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Golden Compass English Studio. Бүх эрх хуулиар хамгаалагдсан.</p>
+      <p>Улаанбаатар, Монгол улс 🇲🇳</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING -->
+<div class="floating">
+  <a href="https://wa.me/97694490919" class="float-btn fb-wa" title="WhatsApp">💬</a>
+  <a href="tel:94490919" class="float-btn fb-msg" title="Залгах">📞</a>
+  <a href="#register" class="float-btn fb-reg">✦ Бүртгүүлэх</a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
